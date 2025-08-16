@@ -70,7 +70,7 @@ jobs:
       - name: Get tag from Base.lua
         id: get_tag
         run: |
-          VERSION=$(grep "local _VERSION_" "Boilerplate_!Base/src/lib/Base.lua" | sed -n "s/local _VERSION_.*= *['\"]\\([^'\"]*\\)['\"].*/\\1/p")
+          VERSION=$(grep "local _VERSION_" "MY_!Base/src/lib/Base.lua" | sed -n "s/local _VERSION_.*= *['\"]\\([^'\"]*\\)['\"].*/\\1/p")
           if [ -z "$VERSION" ]; then
             echo "Error: Could not extract version from Base.lua"
             exit 1
