@@ -123,7 +123,7 @@ jobs:
           }
 
           # 处理更新日志并保存到临时变量
-          PROCESSED_CHANGELOG="## Boilerplate插件集 v${VERSION}"$'\n\n'"$(process_changelog "$CHANGELOG")"
+          PROCESSED_CHANGELOG="## 茗伊插件集 v${VERSION}"$'\n\n'"$(process_changelog "$CHANGELOG")"
 
           # 输出到 TMPFILE
           echo "$PROCESSED_CHANGELOG" >> $TMPFILE
